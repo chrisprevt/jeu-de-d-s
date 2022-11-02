@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="test.css">
+
+</head>
+
+<body>
+  <header>
+	<!-- place navbar here -->
+  </header>
+  <main class="background-img box">
+	<section class="container-fluid section-1 mt-5 mb-5">
+		<div class="row st-1">
+			<div class="col-12 st-1-2">
+			<button id="new-game" class="btn"><img src="./images/icons/add-circle-outline.svg" style="height:20px ;" alt=""> New game</button>
+			</div>
+		</div>
+	</section>
+	<section class="container-fluid section-2">
+		<div class="row st-2-1">
+			<div class="col-4 st-2-2">
+				<p class="player playerName-0">Joueur 1<img class="player-0 active-player"></img></p>
+				<p id="score-0" class="pt-4" style="font-size: 100px; color: red;">0</p>
+				<span class="d-flex flex-column align-items-center">
+				<p class=" m-0">En Cours</p>
+				<p id="current-0" class="h3">0</p>
+				</span>	
+			</div>
+			<div class="col-4 st-2-4">
+			<span id="dice" style="height:100px ; width:100px; margin-bottom: 150px;"></span>
+			<button id="reload"  class="btn"><img src="./images/icons/reload.svg" style="height:20px ;" alt=""> Jeter le dé</button>
+			<button id="download"  class="btn"> <img src="./images/icons/ios-download-outline.svg" style="height:20px ;" alt="">Pause</button>				
+			</div>
+			<div class="col-4 st-2-5">
+				<p class="player playerName-1">Joueur 2 <img class="player-1"></img></p>
+				<p id="score-1" class="pt-4" style="font-size: 100px; color: red;">0</p>
+				<span class="d-flex flex-column align-items-center">
+				<p class="m-0">En Cours</p>
+				<p id="current-1" class="h3">0</p>
+				</span>				
+				
+			</div>
+		</div>
+	</section>
+  </main>
+  <footer>
+	<!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+	integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+	integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="test.js"></script>
+</body>
+
+</html>

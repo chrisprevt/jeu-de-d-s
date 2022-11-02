@@ -1,0 +1,126 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(255, 253, 253);         
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    color: white; 
+  }
+
+  main {   
+    width: 900px;
+    height: 500px;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .background-img{
+    background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% auto;
+    padding:20px;
+    border: 5px solid #2a3cad;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #2a3cad;
+    position: relative;
+  }
+
+  
+
+  .st-1-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 10px;
+  }
+   
+
+  .st-2-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .st-2-2 span {
+    background-color: red;   
+    height: 70px;
+    width: 100px;
+    border: solid 2px yellow;   
+    border-radius: 10px;    
+  }
+
+  .st-2-4 {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: end;
+  }
+
+  .st-2-5 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+  }
+
+  .st-2-5 span{
+    background-color: red;
+    height: 70px;
+    width: 100px; 
+    border: solid 2px yellow;   
+    border-radius: 10px;
+      }
+
+  .icon {
+    width: 30px;
+    position: relative;
+    top: 5px;
+    padding-right: 8px;
+  }
+  
+  
+  .btn {
+    font-weight: 400;
+    color:yellow;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: rgb(243, 224, 224);
+    font-size: larger;
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+  }
+
+  .action {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }  
+ 
+  /*
+  ************
+  * Dice
+  ************
+  */
+  .dice {
+    max-width: 80px;
+    height: auto;
+    margin-top: 30px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .active-player {
+    content: url(./images/icons/circle-fill.svg);
+    width: 13px;
+    margin-left: 10px;
+    padding-bottom: 2px;
+  }
+  
+  
+  
+  
