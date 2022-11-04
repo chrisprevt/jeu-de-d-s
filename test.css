@@ -47,8 +47,7 @@ body {
     align-items: center;
   }
 
-  .st-2-2 span {
-    background-color: red;   
+  .st-2-2 span {      
     height: 70px;
     width: 100px;
     border: solid 2px yellow;   
@@ -68,8 +67,7 @@ body {
     align-items: center;   
   }
 
-  .st-2-5 span{
-    background-color: red;
+  .st-2-5 span{    
     height: 70px;
     width: 100px; 
     border: solid 2px yellow;   
