@@ -4,37 +4,37 @@ let roundScore = 0;
 let activePlayer = 0;
 let scores = [0, 0];
 
-// Get the #dice element
+// l'élément dice
 const dice = document.querySelector("#dice");
-// Get roll button
+// Bouton  jeter dice
 const roll = document.querySelector("#reload");
-// Get hold button
+// le bouton Hold
 const hold = document.querySelector("#download");
-// Get new game button
+//bouton jeu
 const newGame = document.querySelector("#new-game");
-// Get the players
+// joueurs
 const player0 = document.querySelector(".player-0");
 const player1 = document.querySelector(".player-1");
 
-// Roll the dice and display the round score
+// Lancer les dés et afficher le score 
 const rollDice = function () {
-  // Create a random number
+  // Créer un nombre aléatoire
   randomNumber = Math.floor(Math.random() * 6) + 1;
 
-  // Display dice
+  // Afficher les dés
   dice.innerHTML = `<img class="dice" src="./images/dice/dice-${randomNumber}.png" alt="dice ${randomNumber}">`;
 
-  // Round score
+  // Score
   if (randomNumber !== 1) {
     roundScore += randomNumber;
-    // Display round score
+    // Afficher le score 
     document.querySelector(`#current-${activePlayer}`).textContent = roundScore;
   } else {
     changePlayer();
   }
 };
 
-// Change player
+// Changer de joueur
 const changePlayer = function () {
   roundScore = 0;
   document.querySelector(`#current-${activePlayer}`).textContent = 0;
@@ -43,20 +43,20 @@ const changePlayer = function () {
   player1.classList.toggle("active-player");
 };
 
-// Hol the score
+// le score
 const holdScore = function () {
-  // add current score
+  // Ajouter le score actuel
   scores[activePlayer] += roundScore;
-  // display score
+  // score affichagé
   document.querySelector(`#score-${activePlayer}`).textContent = scores[activePlayer];
 
-  // check player score
+  // Vérifier le score du joueur
   if (scores[activePlayer] >= 100) {
     document.querySelector(`.playerName-${activePlayer}`).classList.add("winner-player");
     document.querySelector(`.playerName-${activePlayer}`).innerHTML = `<p>winner !</p>`;
 
   } else {
-    // Change player
+    // Changer de joueur
     changePlayer();
   }
 };
@@ -66,7 +66,7 @@ const replay = function () {
   document.location.reload();
 };
 
-// Listen for click events
+// les événements de clickables
 roll.addEventListener("click", rollDice, false);
 hold.addEventListener("click", holdScore, false);
 newGame.addEventListener("click", replay, false);
